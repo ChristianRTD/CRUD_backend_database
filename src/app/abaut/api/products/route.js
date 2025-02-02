@@ -4,6 +4,9 @@ export  function GET() {
   return NextResponse.json("LISTANDO PRODUCTOS");
 }
 
-export  function POST() {
+export  async function POST(resquest) {
+
+  const data = await request.json()
+    console.log(data)
     return NextResponse.json("CREANDO PRODUCTOS");
   }
